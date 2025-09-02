@@ -6,7 +6,7 @@ import requests#to get news
 
 recognizer = sr.Recognizer()
 engine = pyttsx3.init()
-newsapi="f4347fc61dba42319c514a65523102d4" #newsapikey
+newsapi="" #newsapikey
 
 # initializing for computer to say text
 def speak(text): 
@@ -101,3 +101,4 @@ if __name__ == "__main__":
             print("Could not understand the audio.")
         except sr.RequestError as e:
             print(f"Could not request results; {e}")
+
